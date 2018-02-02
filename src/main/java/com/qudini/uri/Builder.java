@@ -76,7 +76,9 @@ public final class Builder {
 
     public static String createPath(String... components) {
         checkPath(components);
-        return String.join("/", components);
+        return (components.length <= 0)
+                ? ""
+                : ('/' + String.join("/", components));
     }
 
     private static void reject(char rejected, InvalidValueException rejectionException, String subject) {
@@ -172,7 +174,7 @@ public final class Builder {
 
     public enum Scheme {HTTP, HTTPS}
 
-    private static abstract class InvalidValueException extends RuntimeException {
+    private abstract static class InvalidValueException extends RuntimeException {
     }
 
     public static final class AtInUserNameException extends InvalidValueException {

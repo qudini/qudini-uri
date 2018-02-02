@@ -71,6 +71,6 @@ public class BuilderTest {
 
     @Test
     public void createPath() {
-        assertEquals(Builder.createPath("123", "abc", "42", "foo"), "123/abc/42/foo");
+        assertEquals(Builder.createPath("123", "abc", "42", "foo"), "/123/abc/42/foo");
     }
 }
