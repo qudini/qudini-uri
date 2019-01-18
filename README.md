@@ -1,5 +1,7 @@
 # Qudini URIs
 
+[![CircleCI](https://circleci.com/gh/qudini/qudini-uri.svg?style=svg)](https://circleci.com/gh/qudini/qudini-uri)
+
 Utilities for URIs. Currently only covers URI creation and subpath creation, both with proper escaping and validation.
 
 ```java
