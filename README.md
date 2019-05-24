@@ -2,6 +2,9 @@
 
 [![CircleCI](https://circleci.com/gh/qudini/qudini-uri.svg?style=svg)](https://circleci.com/gh/qudini/qudini-uri)
 
+__Deprecated__: use Spring's `UriComponentsBuilder` class instead:
+[UriComponentsBuilder JavaDoc](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/util/UriComponentsBuilder.html).
+
 Utilities for URIs. Currently only covers URI creation and subpath creation, both with proper escaping and validation.
 
 ```java
